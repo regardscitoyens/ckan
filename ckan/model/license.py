@@ -56,6 +56,7 @@ class LicenseRegister(object):
                 LicenseCreativeCommonsZero(),
                 LicenseCreativeCommonsAttribution(),
                 LicenseCreativeCommonsAttributionShareAlike(),
+                LicenseFreeArt(),
                 LicenseGNUFreeDocument(),
                 LicenseOtherOpen(),
                 LicenseOtherPublicDomain(),
@@ -319,4 +320,15 @@ class LicenceOuverte(DefaultLicense):
     @property
     def title(self):
         return _("French Licence Ouverte (LO/OL)")
+
+class LicenseFreeArt(DefaultLicense):
+    domain_content = True
+    id = "lal"
+    is_okd_compliant = True
+    url = "http://artlibre.org/licence/lal/en"
+
+    @property
+    def title(self):
+        return _("Free Art License")
+
 
