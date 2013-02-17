@@ -94,6 +94,7 @@ Add a logo file at ``mypublicdir/images/mylogo.png``, then set options in the CK
 
  extra_public_paths = /path/to/mypublicdir
  ckan.site_logo = /images/mylogo.png
+ ckan.site_logo_width = 64
 
 
 Adding a New Stylesheet

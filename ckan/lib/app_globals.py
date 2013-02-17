@@ -20,6 +20,7 @@ class Globals(object):
         self.favicon = config.get('ckan.favicon',
                                   '/images/icons/ckan.ico')
         self.site_logo = config.get('ckan.site_logo', '')
+        self.site_logo_width = config.get('ckan.site_logo_width', '64')
         self.site_url = config.get('ckan.site_url', '')
         self.site_url_nice = self.site_url.replace('http://','').replace('www.','')
         self.site_description = config.get('ckan.site_description', '')

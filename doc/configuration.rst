@@ -64,6 +64,20 @@ Default value:  (none)
 This sets the logo used in the title bar.
 
 .. index::
+   single: site_logo
+
+site_logo_width
+^^^^^^^^^^^^^^^
+
+Example::
+
+ ckan.site_logo_width = 150
+
+Default value:  64
+
+This sets the width of logo used in the title bar.
+
+.. index::
    single: site_url
 
 
