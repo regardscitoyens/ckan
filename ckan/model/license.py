@@ -65,6 +65,7 @@ class LicenseRegister(object):
                 LicenceOuverte(),
                 LicenseCreativeCommonsNonCommercial(),
                 LicenseOtherNonCommercial(),
+                LicenseAPIE(),
                 LicenseOtherClosed(),
                 ]
             self._create_license_list(default_license_list)
@@ -331,4 +332,11 @@ class LicenseFreeArt(DefaultLicense):
     def title(self):
         return _("Free Art License")
 
+class LicenseAPIE(DefaultLicense):
+    id = "fr-apie"
+    url = "https://www.apiefrance.fr/sections/acces_thematique/reutilisation-des-informations-publiques/licence-type"
+
+    @property
+    def title(self):
+        return _("French APIE License (Not Open)")
 
