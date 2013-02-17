@@ -420,6 +420,7 @@ body.index.home .front-page .action-box h1 {
 body.index.home .front-page .action-box {
   border-radius: 20px;
   background:  #FFF7C0;
+  height: 250px;
 }
 body.index.home .front-page .action-box-inner {
   padding: 0 20px 20px;
@@ -465,6 +466,7 @@ body.index.home .front-page .action-box-inner .create-button {
   font-size: 1.3em;
   color: #fff;
   padding: 0.5em;
+  margin-top: 15px;
 }
 body.index.home .front-page .action-box-inner .create-button:hover {
   background-color: #822;
