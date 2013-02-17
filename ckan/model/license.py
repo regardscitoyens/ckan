@@ -61,6 +61,7 @@ class LicenseRegister(object):
                 LicenseOtherPublicDomain(),
                 LicenseOtherAttribution(),
                 LicenseOpenGovernment(),
+                LicenceOuverte(),
                 LicenseCreativeCommonsNonCommercial(),
                 LicenseOtherNonCommercial(),
                 LicenseOtherClosed(),
@@ -308,3 +309,14 @@ class LicenseOtherClosed(DefaultLicense):
     @property
     def title(self):
         return _("Other (Not Open)")
+
+class LicenceOuverte(DefaultLicense):
+    domain_content = True
+    id = "fr-lo"
+    is_okd_compliant = True
+    url = "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence"
+
+    @property
+    def title(self):
+        return _("French Licence Ouverte (LO/OL)")
+
