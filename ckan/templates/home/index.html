@@ -10,7 +10,7 @@
 
   <div py:match="//div[@id='content']" class="front-page">
     <div>
-      <h1 class="page_heading">Welcome to ${g.site_title} !</h1>
+      <h1 class="page_heading">Welcome to NosDonnées.fr !</h1>
     </div>
     <div class="row">
       <div class="span4">
@@ -21,7 +21,7 @@
             <form action="${h.url_for(controller='package', action='search')}" method="GET"> 
               <input name="q" value="" class="search-field" placeholder="${_('Find datasets')}" /> 
             </form> 
-            <p>${g.site_title} contains <a href="${h.url_for(controller='package', action='search')}">${c.package_count} datasets</a> that you can 
+            <p>NosDonnées.fr contains <a href="${h.url_for(controller='package', action='search')}">${c.package_count} datasets</a> that you can 
             browse, learn about and download.</p>
           </div>
         </div>
