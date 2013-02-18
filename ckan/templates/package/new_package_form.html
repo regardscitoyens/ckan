@@ -128,6 +128,24 @@
       <p class="field_error" py:if="errors.get('tag_string', '')">${errors.get('tag_string', '')}</p>
     </div>
   </div>
+
+  <div style="margin-bottom: 15px;">
+    <div class="control-group" style="float: left;">
+      <label class="control-label field_opt" for="author">Author</label>
+      <div class="controls">
+        <input id="author" name="author" type="text" value="${data.get('author', '')}" />
+      </div>
+    </div>
+    <div class="control-group" style="float: left;">
+      <label class="control-label field_opt" for="author_email">e-mail</label>
+      <div class="controls">
+        <input id="author_email" name="author_email" type="text" value="${data.get('author_email', '')}" />
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <p>The name of the main contact, for enquiries about this particular dataset, using the e-mail address in the following field.</p>
+  </div>
+
 </fieldset>
 
 <fieldset class="tab-pane" id="resources">
@@ -187,24 +205,10 @@
       </py:for>
     </py:for>
   </div>
+
 </fieldset>
 
-<fieldset class="tab-pane fade" id='further-information'>
-  <div class="control-group">
-    <label class="control-label field_opt" for="author">Author</label>
-    <div class="controls">
-      <input id="author" name="author" type="text" value="${data.get('author', '')}" />
-      <p>The name of the main contact, for enquiries about this particular dataset, using the e-mail address in the following field.</p>
-    </div>
-  </div>
-
-  <div class="control-group">
-    <label class="control-label field_opt" for="author_email">Author email</label>
-    <div class="controls">
-      <input id="author_email" name="author_email" type="text" value="${data.get('author_email', '')}" />
-    </div>
-  </div>
-
+<fieldset class="tab-pane fade" id='further-information-2'>
   <div class="control-group">
     <label class="control-label field_opt" for="maintainer">Maintainer</label>
     <div class="controls">
@@ -290,7 +294,7 @@
   </div>
 </fieldset>
 
-<div class="author-box ckan-logged-in" style="display: none;">
+<div class="author-box ckan-logged-in">
   <p>Author: ${c.author}</p>
 </div>
 <div class="author-box ckan-logged-out">

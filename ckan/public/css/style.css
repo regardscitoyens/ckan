@@ -936,7 +936,7 @@ span.extras-label {
 }
 .dataset-create-form .homepage-field,
 .dataset-create-form .tags-field {
-  display: none;
+  display: block;
 }
 #license-instructions {
   font-size: 11px;
