@@ -64,7 +64,7 @@
           <img width="${g.site_logo_width}" src="${h.url_for_static(g.site_logo)}" alt="${g.site_title}" title="${g.site_title}" id="logo" />
         </a>
         <div id="site-name">
-          <a href="${h.url('home')}">${g.site_title} &mdash; ${g.site_description}</a>
+          <a href="${h.url('home')}">NosDonnées.fr ${g.site_description}</a>
         </div>
         <div class="menu">
           <span id="menusearch">
@@ -196,19 +196,17 @@
               </li>
             </ul>
           </div>
+	  <br/>
+          Licensed under the <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open Database License</a><a href="http://opendefinition.org/"> <img alt="This Content and Data is Open" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" style="border: none;"/></a>
         </div>
         <div class="span3">
           <h3 class="widget-title">Meta</h3>
           <p id="credits">
-            &copy; 2013 <img src="http://www.regardscitoyens.org/favicon.png" id="footer-rc-logo" height="15"/> <a href="http://regardscitoyens.org/">Regards Citoyens</a> 
-            - <a href="http://fr.okfn.org/">Chapitre français d'OKFN</a><br/>
+            &copy; 2013 <img src="http://assets.okfn.org/images/logo/okf_logo_white_and_green_tiny.png" id="footer-okf-logo" /><a href="http://fr.okfn.org/">Open Knowledge Foundation France</a> &mdash;<br/><img src="http://www.regardscitoyens.org/favicon.png" id="footer-rc-logo" height="15"/> <a href="http://regardscitoyens.org/">Regards Citoyens</a><br/>
             &copy; 2012
             <img src="http://assets.okfn.org/images/logo/okf_logo_white_and_green_tiny.png" id="footer-okf-logo" />
             <a href="http://okfn.org/">Open Knowledge Foundation</a>
-            Licensed under the <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open Database License</a>
-            <a href="http://opendefinition.org/"><img alt="This Content and Data is Open" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" style="border: none;"/></a>
-
-            <br/><br/>
+            <br/>
             Powered by <a href="http://ckan.org">CKAN</a> v${c.__version__}.<br/>
           </p>
         </div>
