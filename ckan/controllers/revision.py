@@ -103,25 +103,34 @@ class RevisionController(BaseController):
                                         'date_updated':
                                     transition += ':date_updated'
                                     break
-                    indication = "%s:%s" % (package.name, transition)
-                    package_indications.append(indication)
-                pkgs = u'[%s]' % ' '.join(package_indications)
-                item_title = u'r%s ' % (revision.id)
-                item_title += pkgs
-                if revision.message:
-                    item_title += ': %s' % (revision.message or '')
-                item_link = h.url_for(controller='revision', action='read', id=revision.id)
-                item_description = _('Datasets affected: %s.\n') % pkgs
-                item_description += '%s' % (revision.message or '')
-                item_author_name = revision.author
-                item_pubdate = revision.timestamp
-                feed.add_item(
-                    title=item_title,
-                    link=item_link,
-                    description=item_description,
-                    author_name=item_author_name,
-                    pubdate=item_pubdate,
-                )
+                    if len(package.title):
+                       title = package.title
+                    else:
+                       if len(package.name):
+                          title = package.name
+                       else:
+                          title = revision.id
+                    if len(revision.message):
+                       description = revision.message
+                    else:
+                       description = transition
+                    pkgs = '%s : %s' % (title, description)
+                    item_title = pkgs
+                    if len(package.name):
+                       item_link = h.url_for(controller='package', action='read', id='%s@%s' % (package.name, revision.timestamp))
+                    else:
+                       item_link = h.url_for(controller='revision', action='read', id=revision.id)
+                    item_description = _('Datasets affected: %s.\n') % pkgs
+                    item_description += ' ' + _('by') + ' ' + revision.author
+                    item_author_name = revision.author
+                    item_pubdate = revision.timestamp
+                    feed.add_item(
+                        title=item_title,
+                        link=item_link,
+                        description=item_description,
+                        author_name=item_author_name,
+                        pubdate=item_pubdate,
+                    )
             feed.content_type = 'application/atom+xml'
             return feed.writeString('utf-8')
         else:
