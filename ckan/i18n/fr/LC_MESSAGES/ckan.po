@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: CKAN\n"
 "Report-Msgid-Bugs-To: http://trac.ckan.org/\n"
 "POT-Creation-Date: 2012-07-31 12:17+0100\n"
-"PO-Revision-Date: 2013-02-25 22:36+0000\n"
-"Last-Translator: Oumph <oumph@free.fr>\n"
+"PO-Revision-Date: 2013-02-27 10:35+0000\n"
+"Last-Translator: Roux <b.ooghe@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/ckan/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -674,7 +674,7 @@ msgstr "La licence sous laquelle est publié ce jeu de données."
 #: ckanext/publisher_form/templates/dataset_form.html:152
 #: ckanext/publisher_form/templates/publisher_read.html:33
 msgid "Tags"
-msgstr "Mot-clés"
+msgstr "Mots-clés"
 
 #: ckan/forms/package.py:69
 #, python-format
@@ -2352,7 +2352,7 @@ msgstr "Modifier Les rôles existants pour ces groupes d'autorisation"
 #: ckanext/publisher_form/templates/publisher_form.html:132
 #: ckanext/publisher_form/templates/publisher_read.html:50
 msgid "Datasets"
-msgstr "Jeu de données"
+msgstr "Jeux de données"
 
 #: ckan/templates/group/edit_form.html:17
 #: ckan/templates/group/new_group_form.html:114
@@ -2571,7 +2571,7 @@ msgstr "Administrateurs"
 #: ckan/templates/group/read.html:29 ckan/templates/package/search.html:25
 #: ckanext/publisher_form/templates/publisher_read.html:34
 msgid "Resource Formats"
-msgstr "Formats de la ressource"
+msgstr "Formats des données"
 
 #: ckan/templates/group/read.html:33
 #: ckanext/organizations/templates/organization_read.html:56
@@ -4153,7 +4153,7 @@ msgstr "Groupes les plus gros"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:88
 msgid "Top Tags"
-msgstr "Mot-clés les plus utilisés"
+msgstr "Mots-clés les plus utilisés"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:95
 msgid "Users owning most datasets"
