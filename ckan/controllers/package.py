@@ -787,6 +787,7 @@ class PackageController(BaseController):
             c.package['isopen'] = model.Package.\
                 get_license_register()[license_id].isopen()
         except KeyError:
+            #if license_id is not None and license_id != "":
             c.package['isopen'] = False
 
         #TODO: find a nicer way of doing this
